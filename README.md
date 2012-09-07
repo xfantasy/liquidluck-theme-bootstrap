@@ -21,6 +21,11 @@ $ git clone git://github.com/lepture/liquidluck-theme-bootstrap.git _themes/boot
 
 Edit your settings file, change the theme to ``bootstrap``.
 
+```py
+theme = 'bootstrap'
+use_relative_url = True
+```
+
 Disable some writers:
 
 ```py
