@@ -55,15 +55,18 @@
         <div class="span3">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
-              {% block sidebar %}
-              <li class="nav-header">Sidebar</li>
-              <li class="active"><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              {% endblock %}
+              {%- block sidebar %}
+              {%- for cat in resource.category %}
+              <li class="nav-header"><a href="{{content_url(cat, 'index.html')}}">{{cat|categorist}}</a>
+              <ul>
+                {% for post in resource.category[cat] if post.recommend %}
+                <li><a href="{{post|permalink}}">{{post.title}}</a></li>
+                {% endfor %}
+              </ul>
+              </li>
+
+              {%- endfor %}
+              {%- endblock %}
             </ul>
           </div>
         </div>

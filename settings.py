@@ -11,8 +11,8 @@ author = {
 lang = 'en'
 
 navigation = [
-    ('Home', '/'),
-    ('About', '/about.html'),
+    ('Author', author['website']),
+    ('Theme', website),
 ]
 
 twitter = 'lepture'
@@ -20,9 +20,6 @@ github = None
 disqus = None
 analytics = None
 
-
-#: key-value descriptions
-descriptions = {}
 
 #: key-value category
 categories = {}

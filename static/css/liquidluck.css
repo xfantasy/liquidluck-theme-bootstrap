@@ -9,6 +9,12 @@ body {
     font-size: 14px;
     color: #999;
 }
+#content-container h2 {
+    margin-top: 45px;
+}
+#content-container h3 {
+    margin-top: 30px;
+}
 
 /* pygments */
 .highlight .hll { background-color: #ffffcc }

@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
 
-def description(key):
+def categorist(key):
     from liquidluck.options import settings
-    dct = settings.theme_variables.get('descriptions')
+    dct = settings.theme_variables.get('categories')
     if not isinstance(dct, dict):
         return ''
     if key not in dct:
