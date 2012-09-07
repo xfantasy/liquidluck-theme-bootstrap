@@ -14,7 +14,7 @@ $ liquidluck install bootstrap
 Install this theme with Git:
 
 ```
-$ git clone git://github.com/lepture/liquidluck-theme-bootstrap.git _themes/bootstrap
+$ git submodule add git://github.com/lepture/liquidluck-theme-bootstrap.git _themes/bootstrap
 ```
 
 ## Setup
