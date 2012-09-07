@@ -10,9 +10,7 @@
   </div>
 
   <div class="entry-meta">
-    <time class="updated" datetime="{{post.date|xmldatetime}}" pubdate>
-      <a href="{{ post|year_url }}">{{post.date.strftime('%Y-%m-%d')}}</a>
-    </time>
+    <time class="updated" datetime="{{post.date|xmldatetime}}" pubdate>{{post.date.strftime('%Y-%m-%d')}}</time>
     <span class="author vcard">
       {% if post.author.website -%}
       by <a class="url fn" href="{{post.author.website}}">{{post.author.name}}</a>
